@@ -14,7 +14,10 @@ export default {
     },
     colors: {
       primary: "#17141A",
+      secondary: "#FFC672",
+      secondaryHover: "rgba(0,0,0,0.64)",
       blue: "#1fb6ff",
+      black: "black",
       white: "white",
       purple: "#7e5bef",
       pink: "#ff49db",

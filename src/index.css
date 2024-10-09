@@ -389,6 +389,25 @@ video {
   height: auto;
 }
 
+body, html {
+  margin: 0;
+}
+
+.box-container{
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.custom-clip-path{
+  clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 57%, 93% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
+}
+
+.custom-clip-path-two{
+  clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 57%, 93% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
+}
+
+
 /* Make elements with the HTML hidden attribute stay hidden by default */
 [hidden] {
   display: none;
