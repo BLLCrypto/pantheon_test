@@ -11,7 +11,7 @@ const items = [
 ]
 
 const SidebarButton = ({text, isCurrent}) => {
-    return <button className="custom-clip-path absolute group-hover:bg-secondaryHover group-hover:text-white px-3 top-[1px] right-[1px] left-[1px] bottom-[1px] flex justify-between items-center">
+    return <button className={`custom-clip-path absolute ${isCurrent ? "bg-secondaryHover text-white" : "group-hover:bg-secondaryHover group-hover:text-white"}  px-3 top-[1px] right-[1px] left-[1px] bottom-[1px] flex justify-between items-center`}>
         <span>{text}</span>
         {isCurrent &&  <img className="h-full" src={ButtonSfere}/>}
 
@@ -45,7 +45,7 @@ function Sidebar() {
 
 
                 <ul className="mt-5">
-                    {items.map( (i, index) => <li key={index} className={`group custom-clip-path-two relative text-secondary opacity-75 text-xl flex items-center h-10 cursor-pointer m-3 hover:bg-secondary  rounded-br-md border-secondary`}>
+                    {items.map( (i, index) => <li key={index} className={`group custom-clip-path-two relative text-secondary opacity-75 text-xl flex items-center h-10 cursor-pointer m-3 ${index === currentItem ? "bg-secondary " : "hover:bg-secondary "} rounded-br-md border-secondary`}>
                     <SidebarButton text={i} isCurrent={index === currentItem} />
                     </li>)}
             
