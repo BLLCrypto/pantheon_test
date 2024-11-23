@@ -25,7 +25,7 @@ function Sidebar() {
   return (
       <div
         className={`${
-          isOpen ? "w-96" : "w-0"
+          isOpen ? "min-w-72 w-6/12 md:w-6/12 lg:w-5/12 xl:w-3/12" : "w-0"
         } h-screen pt-24 transition-width duration-300 absolute`}
       >
         <div className="absolute top-0 z-0 h-full w-full bg-secondary bg-opacity-25"     style={{
@@ -45,7 +45,7 @@ function Sidebar() {
 
 
                 <ul className="mt-5">
-                    {items.map( (i, index) => <li key={index} className={`group custom-clip-path-two relative text-secondary opacity-75 text-xl flex items-center h-10 cursor-pointer m-3 ${index === currentItem ? "bg-secondary " : "hover:bg-secondary "} rounded-br-md border-secondary`}>
+                    {items.map( (i, index) => <li key={index} className={`group custom-clip-path-two relative text-secondary opacity-75 text-xl  flex items-center h-10 cursor-pointer m-3 ${index === currentItem ? "bg-secondary " : "hover:bg-secondary "} rounded-br-md border-secondary`}>
                     <SidebarButton text={i} isCurrent={index === currentItem} />
                     </li>)}
             
@@ -54,7 +54,7 @@ function Sidebar() {
 
             
             <div className={`w-full bottom-2 px-6 flex`}>
-                <span className="text-xl opacity-75 text-secondary cursor-pointer">SETTINGS</span>
+                <span className="text-xl font-thin opacity-75 text-secondary cursor-pointer">SETTINGS</span>
             </div>
             
             </>}

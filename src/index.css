@@ -53,10 +53,13 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  @apply bg-primary; /* You can use any Tailwind color */
-  background-image: url("./assets/border.svg"), url("./assets/border.svg");
+  @apply bg-primary;
+  @apply text-white;
+  @apply text-base;
+  /* You can use any Tailwind color */
+  /*background-image: url("./assets/border.svg"), url("./assets/border.svg");
   background-position: right top, left top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 /*
@@ -125,7 +128,6 @@ pre {
   font-family: theme('fontFamily.mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace); /* 1 */
   font-feature-settings: theme('fontFamily.mono[1].fontFeatureSettings', normal); /* 2 */
   font-variation-settings: theme('fontFamily.mono[1].fontVariationSettings', normal); /* 3 */
-  font-size: 1em; /* 4 */
 }
 
 /*
