@@ -29,8 +29,10 @@ export default {
       "gray-light": "#EFDE8A",
     },
     fontFamily: {
-      sans: ["Rajdhani", "sans-serif"],
-      serif: ["Rajdhani", "serif"],
+      sans: ["Rajdhani","sans-serif"],
+      serif: ["Rajdhani","serif"],
+      title: ["GT-Pantheon-Display-Regular-Trial", "sans-serif"],
+      text: ["GT-Pantheon-Text-Regular-Trial", "sans-serif"]
     },
     fontSize: {
       "2xs": "14px",
@@ -38,9 +40,9 @@ export default {
       sm: "20px",
       base: "24px",
       xl: "28px",
-      "2xl": "1.563rem",
+      "2xl": "32px",
       "3xl": "1.953rem",
-      "4xl": "2.441rem",
+      "4xl": "72px",
       "5xl": "83px",
     },
     extend: {
@@ -59,15 +61,12 @@ export default {
       filter: {
         blur: "blur(150px)",
       },
+      blur: {
+        '24': '24px', // Add custom blur value
+      },
       opacity: {
         80: "0.8",
       },
-      textShadow: {
-        glow: "0px 0px 15px rgba(250, 242, 219, 0.50)",
-      },
     },
   },
-  plugins: [
-    require("tailwindcss-textshadow"), // You need to install this plugin
-  ],
 };

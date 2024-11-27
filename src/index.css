@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'GT-Pantheon-Display-Regular-Trial';
+  src: url('./fonts/GT-Pantheon (.woff2)/GT-Pantheon-Display-Regular-Trial.woff2') format('woff2'),
+       url('./fonts/GT-Pantheon (.otf)/GT-Pantheon-Micro-Regular-Trial.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'GT-Pantheon-Text-Regular-Trial';
+  src: url('./fonts/GT-Pantheon (.woff2)/GT-Pantheon-Text-Regular-Trial.woff2') format('woff2'),
+       url('./fonts/GT-Pantheon (.otf)/GT-Pantheon-Text-Regular-Trial.otf') format('otf'),
+}
+
+
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -53,7 +67,7 @@ html,
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  @apply bg-primary;
+  @apply bg-black;
   @apply text-white;
   @apply text-base;
   /* You can use any Tailwind color */
@@ -92,8 +106,15 @@ h3,
 h4,
 h5,
 h6 {
+  @apply font-title;
+  @apply leading-[110%];
+  @apply text-gold;
   font-size: inherit;
   font-weight: inherit;
+  background-image: linear-gradient(135deg, #FAF2DB 0%, #EFDE8A 100%);
+  text-shadow: 0px 0px 15px rgba(250, 242, 219, 0.50);
+  -webkit-background-clip: text; /* Ensures compatibility with WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
 }
 
 /*

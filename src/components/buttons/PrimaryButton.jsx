@@ -2,9 +2,8 @@
 const PrimaryButton = ({text, className}) => {
     return (
     <button 
-    type="button" 
-    className={`uppercase bg-beige-light border border-gold-light focus:outline-none hover:text-gold hover:border-white px-5 py-2.5 ${className}`}
-
+        type="button" 
+        className={`max-w-max text-sm uppercase tracking-[2px] bg-beige-light border border-gold-light focus:outline-none hover:text-gold hover:border-white px-[24px] py-[12px] ${className}`}
     >
         {text}
     </button>)

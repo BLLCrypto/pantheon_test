@@ -6,7 +6,8 @@ import AresImage from "../assets/ares.png"
 import PrimaryButton from "../components/buttons/PrimaryButton"
 import SecondaryButton from "../components/buttons/SecondaryButton"
 
-//tools
+//images
+// Hero - tools
 import ToolOne from "../assets/tool_01.png"
 import ToolTwo from "../assets/tool_02.png"
 import ToolThree from "../assets/tool_03.png"
@@ -16,7 +17,53 @@ import ToolSix from "../assets/tool_06.png"
 import ToolSeven from "../assets/tool_07.png"
 import ToolEigth from "../assets/tool_08.png"
 
-const items = [{image:ToolOne},{image:ToolTwo},{image:ToolThree},{image:ToolFour},{image:ToolFive},{image:ToolSix},{image:ToolSeven},{image:ToolEigth}]
+//
+import IpadMockup from "../assets/ipad_mockup.png"
+import { Star } from "../assets/svg"
+
+
+const items = [
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolOne
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolTwo
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolThree
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolFour
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolFive
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolSix
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolSeven
+    },
+    {
+        name: "FLUX1.1",
+        description: "Flux prioritizes producing consistently high-quality, detailed images with minimal effort.",
+        image:ToolEigth
+    }
+]
 
 const Home = () => {
     return (
@@ -38,15 +85,8 @@ const Home = () => {
                         <img src={AresImage} />
                     </div>
 
-                    <div className="flex flex-col items-center justify-center text-gold text-shadow-glow mb-[32px]"
-                      style={{
-                        backgroundImage: "linear-gradient(135deg, #FAF2DB 0%, #EFDE8A 100%)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
-                      }}
-                    >
-                        <h1 className="text-5xl leading-[110%]">Break Free:</h1>
-                        <h1 className="text-5xl leading-[110%]">One Key to All Your Software</h1>
+                    <div className="flex flex-col items-center justify-center text-center">
+                        <h1 className="text-5xl">Break Free: <br/> One Key to All Your Software</h1>
                     </div>
 
                     <div className="text-center max-w-4xl mb-[40px]">
@@ -67,9 +107,9 @@ const Home = () => {
                                         <img className="w-full h-full" src={i.image} />
                                     </div>
                                     {/* Tooltip */}
-                                    <div className="w-[274px] flex flex-col items-center text-center invisible absolute bottom-full left-1/2 transform -translate-x-1/2 translate-y-4 opacity-0 peer-hover:translate-y-0 peer-hover:opacity-100 duration-300 ease-out mb-[20px] px-[16px] py-[12px] text-sm text-white bg-black  rounded-[8px] peer-hover:pointer-events-auto peer-hover:visible duration-300 leading-[160%] border border-brown">
-                                        <h3 className="">FLUX1.1</h3>
-                                        <p className="text-2xs">Flux prioritizes producing consistently high-quality, detailed images with minimal effort.</p>
+                                    <div className="w-[274px] flex flex-col items-center text-center invisible absolute bottom-full left-1/2 transform -translate-x-1/2 translate-y-4 opacity-0 peer-hover:translate-y-0 peer-hover:opacity-100 duration-300 ease-out mb-[20px] px-[16px] py-[12px] text-sm text-white bg-black  rounded-[8px] peer-hover:pointer-events-auto peer-hover:visible duration-300 border border-brown">
+                                        <p className="text-gold text-sm uppercase tracking-[2px] leading-[160%]">{i.name}</p>
+                                        <p className="text-2xs leading-[160%]">{i.description}</p>
                                     </div>
                                 </div>
                         
@@ -78,6 +118,113 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <div className="flex flex-col relative items-center pt-[100px] pb-[80px] gap-[160px]">
+                <section className="w-full max-w-7xl flex justify-center items-center">
+                    <div className="w-full flex gap-[40px]">
+                        <div className="w-1/2 flex flex-col flex-1">
+                            <h2 className="text-4xl mb-[24px]">One Platform,<br/> Endless<br/> Possibilities</h2>
+                            <p className="mb-[48px]">Get a glimpse of ARES in motion. From design to AI-powered insights, watch how ARES connects your favorite tools into one seamless ecosystem. No complicated setups—just pure productivity.</p>
+                            <PrimaryButton text={"See ARES in Action"} />
+                        </div>
+                        <div className="w-1/2 flex items-center flex-1 overflow-visible">
+                            <img className="absolute right-0 " src={IpadMockup} />
+                        </div>
+                    </div>
+                </section>
+                <section className="w-full max-w-7xl flex justify-center items-center">
+                    <div className="w-full flex gap-[40px]">
+                        <div className="w-1/2 flex items-center flex-1 relative">
+                            <div className="w-[724px] h-full absolute right-0 flex flex-col gap-[16px]">
+                                <div className="flex items-center gap-[20px] self-center">
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                </div>
+                                <div className="flex items-center gap-[20px]">
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                </div>
+                                <div className="flex items-center gap-[20px] self-center">
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-1/2 flex flex-col flex-1">
+                            <div className="w-full h-full pl-[40px]">
+                                <h2 className="text-4xl mb-[24px]">Your Passport to<br/> Partnered Apps</h2>
+                                <p className="mb-[48px]">Coming soon: Log into all your favorite apps with just one click using Sign in with ARES. Forget juggling passwords—this feature keeps your apps connected, your preferences synced, and your projects secure.</p>
+                                <SecondaryButton text={"Coming Soon: Stay Updated"} />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="w-full max-w-7xl flex flex-col justify-center items-center">
+                    <h2 className="text-4xl mb-[24px] mb-[80px]">All-in-One Solution for Your Needs</h2>
+                    <div className="w-full mb-[60px] flex gap-[32px]">
+                        <div className="w-2/5 bg-beige-light flex flex-col items-center text-center border border-gold-light p-[64px]">
+                            <p className="text-gold text-xs mb-[12px] tracking-[1.4px] uppercase">Your All-Access Pass</p>
+                            <p className="text-2xl font-text leading-[120%] mb-[24px]">Ultimate <br/> Access Pass</p>
+                            <div className="w-full flex flex-col gap-[16px] mb-[32px]">
+                                <div className="w-full flex text-start gap-[16px]">
+                                    <div className="relative w-[28px] h-[28px]">
+                                        <div className="absolute top-0 w-full h-full bg-gold bg-opacity-15 rounded-[980px] filter blur-24">
+                                        </div>
+                                        <Star className="w-[28px] h-[28px]" />
+                                    </div>
+                                    <p className="leading-[160%]">Instant access to GPT-4, Claude, and other premium AI tools</p>
+                                </div>
+                                <div className="w-full flex text-start gap-[16px]">
+                                    <div className="relative w-[28px] h-[28px]">
+                                        <div className="absolute top-0 w-full h-full bg-gold bg-opacity-15 rounded-[980px] filter blur-24">
+                                        </div>
+                                        <Star className="w-[28px] h-[28px]" />
+                                    </div>
+                                    <p className="leading-[160%]">Sign in with ARES" across partner platforms (coming soon)</p>
+                                </div>
+                                <div className="w-full flex text-start gap-[16px]">
+                                    <div className="relative w-[28px] h-[28px]">
+                                        <div className="absolute top-0 w-full h-full bg-gold bg-opacity-15 rounded-[980px] filter blur-24">
+                                        </div>
+                                        <Star className="w-[28px] h-[28px]" />
+                                    </div>
+                                    <p className="leading-[160%]">One account, infinite possibilities</p>
+                                </div>
+                            </div>
+                            <div className="flex relative">
+                                <div className="relative top-[40px] flex flex-col gap-[20px]">
+                                    <div className="peer w-[44px] h-[44px] border border-beige-light rounded-[8px] overflow-hidden">
+                                        <img className="w-full h-full" src={ToolSeven} />
+                                    </div>
+                                    <div className="peer w-[44px] h-[44px] border border-beige-light rounded-[8px] overflow-hidden">
+                                        <img className="w-full h-full" src={ToolTwo} />
+                                    </div>
+                                    <div className="peer w-[44px] h-[44px] border border-beige-light rounded-[8px] overflow-hidden">
+                                        <img className="w-full h-full" src={ToolThree} />
+                                    </div>
+                                    <div className="peer w-[44px] h-[44px] border border-beige-light rounded-[8px] overflow-hidden">
+                                        <img className="w-full h-full" src={ToolFour} />
+                                    </div>
+                                    <div className="peer w-[44px] h-[44px] border border-beige-light rounded-[8px] overflow-hidden">
+                                        <img className="w-full h-full" src={ToolFive} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-3/5 flex flex-col gap-[32px]">
+                            <div className="w-full h-1/2 border border-gold-light"></div>
+                            <div className="w-full h-1/2 border border-gold-light"></div>
+                        </div>
+                    </div>
+                    <p className="text-[18px]">We're constantly adding new partners to expand your access — all at no extra cost.</p>
+                </section>
+            </div>
         </div>
     )
 }

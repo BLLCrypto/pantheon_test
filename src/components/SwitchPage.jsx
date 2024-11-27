@@ -1,7 +1,7 @@
 
 const SwitchPage = () => {
     return (
-        <label className="flex items-center cursor-pointer gap-3 xl:gap-6">
+        <label className="flex items-center cursor-pointer gap-3 xl:gap-6 tracking-[2px]">
             <span className="hidden lg:block text-gray uppercase hover:text-gold">For Users</span>
             {/* Text for smaller screens */}
             <span className="block lg:hidden text-gray uppercase hover:text-gold">
