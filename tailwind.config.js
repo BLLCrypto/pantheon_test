@@ -17,14 +17,13 @@ export default {
       secondary: "#FFC672",
       secondaryHover: "rgba(0,0,0,0.64)",
       gold: "#EFDE8A",
-      blue: "#1fb6ff",
-      black: "black",
+      "gold-light": "rgba(239, 222, 138, 0.60)",
+      beige: "#f4ecb5",
+      "beige-light": "rgba(244, 236, 181, 0.10)",
+      brown: "#453E34",
+      black: "#1A161A",
       white: "#fff",
-      purple: "#7e5bef",
-      pink: "#ff49db",
       orange: "#ff7849",
-      green: "#13ce66",
-      yellow: "#ffc82c",
       "gray-dark": "#606068",
       gray: "#D7D7D7",
       "gray-light": "#EFDE8A",
@@ -34,6 +33,7 @@ export default {
       serif: ["Rajdhani", "serif"],
     },
     fontSize: {
+      "2xs": "14px",
       xs: "16px",
       sm: "20px",
       base: "24px",
@@ -41,7 +41,7 @@ export default {
       "2xl": "1.563rem",
       "3xl": "1.953rem",
       "4xl": "2.441rem",
-      "5xl": "3.052rem",
+      "5xl": "83px",
     },
     extend: {
       spacing: {
@@ -51,7 +51,23 @@ export default {
       borderRadius: {
         "4xl": "2rem",
       },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(180deg, #1A1619 0%, #2A232D 100%)",
+        "custom-radial":
+          "radial-gradient(50% 50% at 50% 50%, rgba(101, 78, 28, 0.25) 0%, rgba(244, 236, 181, 0) 100%)",
+      },
+      filter: {
+        blur: "blur(150px)",
+      },
+      opacity: {
+        80: "0.8",
+      },
+      textShadow: {
+        glow: "0px 0px 15px rgba(250, 242, 219, 0.50)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-textshadow"), // You need to install this plugin
+  ],
 };
