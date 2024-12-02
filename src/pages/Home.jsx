@@ -23,6 +23,7 @@ import { CheckMark, Glasses, Star } from "../assets/svg"
 import Mosaic from "../components/Mosaic"
 import Compare from "../components/sections/Compare"
 import Trial from "../components/sections/Trial"
+import FAQ from "../components/sections/Faq"
 
 
 const items = [
@@ -373,6 +374,8 @@ const Home = () => {
                 <Compare />
 
                 <Trial />
+
+                <FAQ />
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ import MosaicSeven from "../assets/mosaic07.jpg"
 import MosaicEight from "../assets/tool_05.png"
 import MosaicNine from "../assets/mosaic09.jpg"
 import MosaicTen from "../assets/mosaic10.jpg"
-import MosaicEleven from "../assets/tool_06.png"
+import MosaicEleven from "../assets/tool_03.png"
 import MosaicTwelve from "../assets/mosaic12.jpg"
 import MosaicThirteen from "../assets/mosaic13.jpg"
 

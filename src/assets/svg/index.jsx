@@ -64,3 +64,15 @@ export const Twitter = ({className}) => {
         </g>
       </svg>)
 }
+
+export const Plus = ({className}) => {
+    return (<svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M12 5V19M5 12H19" stroke="white" stroke-linecap="round"/>
+        </svg>)
+}
+
+export const Close = ({className}) => {
+    return (<svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M7.05024 7.05025L16.9497 16.9497M7.05024 16.9497L16.9497 7.05025" stroke="#EFDE8A" stroke-linecap="round"/>
+      </svg>)
+}
