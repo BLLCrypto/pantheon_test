@@ -5,6 +5,7 @@ import { BorderTop, BorderBottom } from './assets/svg'
 import Header from './components/Header'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
+import Footer from './components/Footer'
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
             path="/*"
             element={<Home/>}/>
       </Routes>
+      <Footer />
     </div>
   )
 }
