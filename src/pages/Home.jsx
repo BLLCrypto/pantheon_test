@@ -19,7 +19,10 @@ import ToolEigth from "../assets/tool_08.png"
 
 //
 import IpadMockup from "../assets/ipad_mockup.png"
-import { Star } from "../assets/svg"
+import { CheckMark, Glasses, Star } from "../assets/svg"
+import Mosaic from "../components/Mosaic"
+import Compare from "../components/sections/Compare"
+import Trial from "../components/sections/Trial"
 
 
 const items = [
@@ -134,26 +137,8 @@ const Home = () => {
                 <section className="w-full max-w-7xl flex justify-center items-center">
                     <div className="w-full flex gap-[40px]">
                         <div className="w-1/2 flex items-center flex-1 relative">
-                            <div className="w-[724px] h-full absolute right-0 flex flex-col gap-[16px]">
-                                <div className="flex items-center gap-[20px] self-center">
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                </div>
-                                <div className="flex items-center gap-[20px]">
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                </div>
-                                <div className="flex items-center gap-[20px] self-center">
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                    <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light"></div>
-                                </div>
+                            <div className="absolute right-0">
+                                <Mosaic />
                             </div>
                         </div>
                         <div className="w-1/2 flex flex-col flex-1">
@@ -307,7 +292,7 @@ const Home = () => {
 
                 <section className="w-full max-w-7xl flex flex-col justify-center items-center">
 
-                    <div className="w-full flex items-center justify-between mb-[80px]">
+                    <div className="w-full flex items-end justify-between mb-[80px]">
                         <h2 className="text-4xl">Join 12,340 Tech Rebels</h2>
                         <PrimaryButton text="Start Free Trial" />
                     </div>
@@ -318,9 +303,9 @@ const Home = () => {
                             <div className="p-[48px]">
                                 <p>“Instead of paying $100s per month for software, I pay just $19 with ARES.”</p>
                             </div>
-                            <div className="flex flex-col justify-center p-[32px] flex-1">
+                            <div className="w-full bg-white bg-opacity-[0.04] flex flex-col justify-center p-[32px] flex-1">
                                 <p>Rachita & John</p>
-                                <p>Shrub Finance</p>
+                                <p className="opacity-60">Shrub Finance</p>
                             </div>
                         </div>
 
@@ -328,7 +313,7 @@ const Home = () => {
                             <div className="p-[48px]">
                                 <p>“Instead of paying $100s per month for software, I pay just $19 with ARES.”</p>
                             </div>
-                            <div className="flex flex-col justify-center p-[32px] flex-1">
+                            <div className="w-full bg-white bg-opacity-[0.04] flex flex-col justify-center p-[32px] flex-1">
                                 <p>Daniela A.</p>
                             </div>
                         </div>
@@ -337,9 +322,9 @@ const Home = () => {
                             <div className="p-[48px]">
                                 <p>“Instead of paying $100s per month for software, I pay just $19 with ARES.”</p>
                             </div>
-                            <div className="flex flex-col justify-center p-[32px] flex-1">
+                            <div className="w-full bg-white bg-opacity-[0.04] flex flex-col justify-center p-[32px] flex-1">
                                 <p>Pat S.</p>
-                                <p>AccelB</p>
+                                <p className="opacity-60">AccelB</p>
                             </div>
                         </div>
                     </div>
@@ -384,6 +369,10 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                <Compare />
+
+                <Trial />
             </div>
         </div>
     )
