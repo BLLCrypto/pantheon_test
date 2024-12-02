@@ -24,6 +24,7 @@ import Mosaic from "../components/Mosaic"
 import Compare from "../components/sections/Compare"
 import Trial from "../components/sections/Trial"
 import FAQ from "../components/sections/Faq"
+import PremiumTools from "../components/sections/PremiumTools"
 
 
 const items = [
@@ -71,7 +72,7 @@ const items = [
 
 const Home = () => {
     return (
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
             <section className="w-full pt-40 min-h-screen bg-custom-gradient relative flex justify-center">
                 <div className="absolute left-0 bottom-0 z-0">
                     <img src={CracksLeft} />
@@ -331,51 +332,14 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className="w-full max-w-7xl flex flex-col justify-center items-center">
-
-                    <div className="w-full flex items-center justify-center mb-[80px]">
-                        <h2 className="text-4xl">Premium Tools, Ready to Roll</h2>
-                    </div>
-
-                    <div className="w-full mb-[60px] flex gap-[32px] leading-[140%]">
-
-                        <div className="w-1/3 bg-beige-light flex flex-col items-center border border-gold-light">
-                            <div className="w-full h-[240px] bg-orange">
-                                
-                            </div>
-                            <div className="flex flex-col p-[48px] flex-1 gap-[16px]">
-                                <p className="font-text text-2xl">GPT-4o</p>
-                                <p>Chat with OpenAI’s most advanced AI model.</p>
-                            </div>
-                        </div>
-
-                        <div className="w-1/3 bg-beige-light flex flex-col items-center border border-gold-light">
-                            <div className="w-full h-[240px] bg-orange">
-                                
-                            </div>
-                            <div className="flex flex-col p-[48px] flex-1 gap-[16px]">
-                                <p className="font-text text-2xl">Claude</p>
-                                <p>Generate complex discussions with ease.</p>
-                            </div>
-                        </div>
-
-                        <div className="w-1/3 bg-beige-light flex flex-col items-center border border-gold-light">
-                            <div className="w-full h-[240px] bg-orange">
-                                
-                            </div>
-                            <div className="flex flex-col p-[48px] flex-1 gap-[16px]">
-                                <p className="font-text text-2xl">Stable Diffusion</p>
-                                <p>Create breathtaking visual art.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <PremiumTools />
 
                 <Compare />
 
                 <Trial />
 
                 <FAQ />
+
             </div>
         </div>
     )

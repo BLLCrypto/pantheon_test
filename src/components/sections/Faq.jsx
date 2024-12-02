@@ -65,7 +65,7 @@ const FAQ = () => {
                   >
                     {item.question}
                   </p>
-                  {activeAccordion === index ? <Close /> : <Plus />}
+                  {activeAccordion === index ? <Close className="w-[24px] h-[24px]" /> : <Plus className="w-[24px] h-[24px]" />}
                 </button>
                 <div
                   className={`accordion-content w-full overflow-hidden transition-[height] duration-300 ease-in-out`}
