@@ -138,6 +138,19 @@ h6 {
   -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
 }
 
+h1{
+  @apply text-3xl sm:text-4xl xl:text-5xl;
+}
+
+h2{
+  @apply text-2xl sm:text-3xl xl:text-4xl;
+}
+
+h3{
+  @apply text-xl sm:text-2xl xl:text-3xl;
+}
+
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */

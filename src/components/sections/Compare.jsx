@@ -1,10 +1,11 @@
 import { CheckMark, Flags, Glasses, Inovator } from "../../assets/svg"
+import { MainMaxW } from "../../config/style"
 
 const IndicatorRow = ({text}) => {
     return (
     <>
         <div className="w-full h-[1px] bg-gold bg-opacity-[0.08]"></div>
-            <div className="flex items-center justify-start gap-[4px] text-[18px]">
+            <div className="flex items-center justify-start gap-[4px] text-0xs">
                 <p className="text-start text-white">{text}</p>
         </div>
     </>
@@ -15,7 +16,7 @@ const NormalRow = ({textOne, textTwo, number}) => {
     return (
     <>
         <div className="w-full h-[1px] bg-gold bg-opacity-[0.16]"></div>
-        <div className="flex items-center justify-center gap-[8px] text-[18px]">
+        <div className="flex items-center justify-center gap-[8px] text-0xs">
             {number &&   <p className="text-center text-gold">{number}</p>}
             <div className="flex items-center justify-center gap-[4px]">
                 <p className="text-center text-gold">{textOne}</p>
@@ -33,11 +34,11 @@ const NormalRow = ({textOne, textTwo, number}) => {
 
 const IndicatorsColumn = () => {
     return (
-        <div className="w-2/5 flex flex-col items-center border border-[rgba(0,0,0,0)] text-center gap-[32px] py-[48px] px-[24px]">
+        <div className="w-full md:w-2/5 flex flex-col items-center border border-[rgba(0,0,0,0)] text-center gap-[32px] py-[48px] px-[24px]">
                 <div className="flex flex-col items-center gap-[24px]">
                     <div className="w-[48px] h-[48px]">
                     </div>
-                    <p className="font-text text-2xl leading-[120%] opacity-0">Indicators</p>
+                    <p className="font-text text-xl xl:text-2xl leading-[120%] opacity-0">Indicators</p>
                 </div>
 
                 <div className="w-full flex flex-col justify-start flex-1 leading-[160%] gap-[8px]">
@@ -73,13 +74,13 @@ const IndicatorsColumn = () => {
 
 const NormalColumn = ({icon, title, items}) => {
     return (
-        <div className="w-1/5 bg-beige-light flex flex-col items-center text-center border border-gold-light gap-[32px] py-[48px] px-[24px]">
+        <div className="w-full md:w-1/5 bg-beige-light flex flex-col items-center text-center border border-gold-light gap-[32px] py-[48px] px-[24px]">
         <div className="flex flex-col items-center gap-[24px]">
             <div className="w-[48px] h-[48px]">
                 {icon}
             </div>
        
-            <p className="font-text text-2xl leading-[120%]">{title}</p>
+            <p className="font-text text-xl xl:text-2xl leading-[120%]">{title}</p>
 
         </div>
         <div className="w-full flex flex-col justify-start flex-1 leading-[160%] gap-[8px]">
@@ -91,12 +92,12 @@ const NormalColumn = ({icon, title, items}) => {
 
 const Compare = () => {
     return (
-        <section className="w-full max-w-7xl flex flex-col justify-center items-center">
-        <div className="w-full flex items-center justify-center mb-[80px]">
-            <h2 className="text-4xl">Compare Features Across Plans</h2>
+        <section className={`${MainMaxW} w-full flex flex-col justify-center items-center`}>
+        <div className="w-full flex items-center justify-center mb-[80px] text-center">
+            <h2>Compare Features <br className="block md:hidden"/> Across Plans</h2>
         </div>
 
-        <div className="w-full mb-[60px] flex gap-[12px]">
+        <div className="w-full mb-[60px] flex flex-col md:flex-row gap-[12px]">
 
             <IndicatorsColumn />
 

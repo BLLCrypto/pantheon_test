@@ -1,17 +1,18 @@
 import { CheckMark, Flags, Glasses, Inovator } from "../../assets/svg"
+import { MainMaxW } from "../../config/style"
 import PrimaryButton from "../buttons/PrimaryButton"
 import Mosaic from "../Mosaic"
 
 const Trial = () => {
     return (
-        <section className="w-full max-w-7xl flex flex-col justify-center items-center">
-            <div className="w-full bg-beige-light flex justify-between items-center border border-gold-light p-[72px]">
-              <div className="w-full flex justify-between items-center overflow-hidden relative">
-                <div className="">
-                    <div className="mb-[24px] leading-[110%]">                    
-                        <h2 className="text-4xl mb-[24px]">Start<br/> Your 7-Day<br/> Free Trial</h2>
+        <section className={`${MainMaxW} w-full flex flex-col justify-center items-center`}>
+            <div className="w-full bg-beige-light flex justify-between items-center border border-gold-light p-[32px] md:p-[72px]  overflow-hidden">
+              <div className="w-full flex flex-col md:flex-row justify-between items-center overflow-visible relative gap-[40px]">
+                <div className="w-full md:min-w-max">
+                    <div className="mb-[24px] leading-[110%] text-center md:text-left">                    
+                        <h2 className="mb-[24px]">Start<br className="hidden md:block"/> Your 7-Day<br/> Free Trial</h2>
                     </div>
-                    <div className="flex flex-col gap-[16px] mb-[32px] text-[18px] leading-[160%]">
+                    <div className="w-full md:w-auto flex flex-col items-center md:items-start gap-[16px] mb-[32px] text-0xs leading-[160%]">
                         <p>See How Much You’ll Save</p>
                         <div className="flex flex-col gap-[8px]">
                             <div className="flex items-center gap-[16px] text-gold">
@@ -28,7 +29,7 @@ const Trial = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="w-full flex justify-center md:justify-start items-center">
                         <PrimaryButton text="Start Free Trial" />
                     </div>
                 </div>

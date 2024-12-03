@@ -13,8 +13,8 @@ export const BorderBottom = ({className}) => {
 
 export const Menu = ({className}) => {
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M3 12H21M3 6H21M3 18H21" stroke="#D7D7D7" stroke-linecap="round" stroke-linejoin="round"/>
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>)
 }
 
@@ -73,7 +73,7 @@ export const Plus = ({className}) => {
 
 export const Close = ({className}) => {
     return (<svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-        <path d="M7.05024 7.05025L16.9497 16.9497M7.05024 16.9497L16.9497 7.05025" stroke="#EFDE8A" stroke-linecap="round"/>
+        <path d="M7.05024 7.05025L16.9497 16.9497M7.05024 16.9497L16.9497 7.05025" stroke="currentColor" stroke-linecap="round"/>
       </svg>)
 }
 

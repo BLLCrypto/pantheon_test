@@ -12,52 +12,32 @@ import MosaicEleven from "../assets/tool_03.png"
 import MosaicTwelve from "../assets/mosaic12.jpg"
 import MosaicThirteen from "../assets/mosaic13.jpg"
 
+const SingleMosaic = ({image}) => {
+    return (  <div className="w-[64px] h-[64px] md:w-[128px] md:h-[128px] rounded-[12px] md:rounded-[24px] border border-beige-light overflow-hidden">
+        <img className="w-full h-full" src={image} />
+    </div>)
+}
+
 const Mosaic = () => {
-    return  (<div className="w-[724px] flex flex-col gap-[16px]">
-    <div className="flex items-center gap-[20px] self-center">
-        <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicOne} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicTwo} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicThree} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicFour} />
-        </div>
+    return  (<div className="w-full md:w-[724px] flex flex-col gap-[16px]">
+    <div className="flex items-center gap-[10px] md:gap-[20px] self-center">
+        <SingleMosaic image={MosaicOne} />
+        <SingleMosaic image={MosaicTwo} />
+        <SingleMosaic image={MosaicThree} />
+        <SingleMosaic image={MosaicFour} />
     </div>
-    <div className="flex items-center gap-[20px]">
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicFive} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicSix} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicSeven} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicEight} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicNine} />
-        </div>
+    <div className="flex items-center gap-[10px] md:gap-[20px] self-center md:self-auto">
+        <SingleMosaic image={MosaicFive} />
+        <SingleMosaic image={MosaicSix} />
+        <SingleMosaic image={MosaicSeven} />
+        <SingleMosaic image={MosaicEight} />
+        <SingleMosaic image={MosaicNine} />
     </div>
-    <div className="flex items-center gap-[20px] self-center">
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicTen} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicEleven} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicTwelve} />
-        </div>
-         <div className="w-[128px] h-[128px] rounded-[24px] border border-beige-light overflow-hidden">
-            <img className="w-full h-full" src={MosaicThirteen} />
-        </div>
+    <div className="flex items-center gap-[10px] md:gap-[20px] self-center">
+        <SingleMosaic image={MosaicTen} />
+        <SingleMosaic image={MosaicEleven} />
+        <SingleMosaic image={MosaicTwelve} />
+        <SingleMosaic image={MosaicThirteen} />
     </div>
 </div>)
 }
