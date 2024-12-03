@@ -18,7 +18,6 @@ export default {
     colors: {
       primary: "#17141A",
       secondary: "#FFC672",
-      secondaryHover: "rgba(0,0,0,0.64)",
       gold: "#EFDE8A",
       "gold-light": "rgba(239, 222, 138, 0.60)",
       beige: "#f4ecb5",
@@ -28,6 +27,7 @@ export default {
       white: "#fff",
       "white-dark": "rgba(255, 255, 255, 0.8)",
       "white-extra-dark": "rgba(255, 255, 255, 0.08)",
+      "white-extra-extra-dark": "rgba(255, 255, 255, 0.04)",
       orange: "#ff7849",
       "gray-dark": "#606068",
       gray: "#D7D7D7",
