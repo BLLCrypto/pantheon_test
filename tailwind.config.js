@@ -23,6 +23,8 @@ export default {
       brown: "#453E34",
       black: "#1A161A",
       white: "#fff",
+      "white-dark": "rgba(255, 255, 255, 0.8)",
+      "white-extra-dark": "rgba(255, 255, 255, 0.08)",
       orange: "#ff7849",
       "gray-dark": "#606068",
       gray: "#D7D7D7",

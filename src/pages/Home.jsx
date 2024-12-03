@@ -19,7 +19,7 @@ import ToolEigth from "../assets/tool_08.png"
 
 //
 import IpadMockup from "../assets/ipad_mockup.png"
-import { CheckMark, Glasses, Star } from "../assets/svg"
+import { CheckMark, Glasses, Goggle, Star } from "../assets/svg"
 import Mosaic from "../components/Mosaic"
 import Compare from "../components/sections/Compare"
 import Trial from "../components/sections/Trial"
@@ -98,9 +98,9 @@ const Home = () => {
                         <p>Skip paywalls effortlessly and access premium AI tools and partner software instantly with ARES. Stop juggling subscriptions—pay only for what you use, nothing more.</p>
                     </div>
 
-                    <div className="flex items-center gap-3 mb-[60px]">
+                    <div className="flex items-center gap-[16px] mb-[60px]">
                         <PrimaryButton text={"Start Free Trial"} />
-                        <SecondaryButton text={"Sign in with google"} />
+                        <SecondaryButton className="!text-white" text={"Sign in with google"} icon={<Goggle />} />
                     </div>
 
                     <div className="w-full flex flex-col items-center gap-[20px] mb-[60px] ">

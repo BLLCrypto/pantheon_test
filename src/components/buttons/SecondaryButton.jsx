@@ -1,7 +1,8 @@
 
-const SecondaryButton = ({text, className}) => {
+const SecondaryButton = ({text, className, icon}) => {
     return (
-    <button type="button" className={`max-w-max text-sm uppercase tracking-[2px] bg-transparent border border-gray-dark focus:outline-none hover:text-gold hover:border-gold px-5 py-2.5 ${className}`}>
+    <button type="button" className={`flex items-center gap-[12px] max-w-max text-sm text-white-dark uppercase tracking-[2px] bg-transparent border border-white-extra-dark focus:outline-none hover:text-gold hover:opacity-90 px-[24px] py-[12px] ${className}`}>
+        {icon}
         {text}
     </button>)
 }

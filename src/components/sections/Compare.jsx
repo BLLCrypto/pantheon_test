@@ -80,11 +80,10 @@ const NormalColumn = ({icon, title, items}) => {
             </div>
        
             <p className="font-text text-2xl leading-[120%]">{title}</p>
+
         </div>
         <div className="w-full flex flex-col justify-start flex-1 leading-[160%] gap-[8px]">
-
-            {items.map( i => <NormalRow textOne={i.textOne} textTwo={i.texTwo} number={i.number} />)}
-            
+            {items.map( i => <NormalRow textOne={i.textOne} textTwo={i.texTwo} number={i.number} />)}            
         </div>
     </div>
     )
@@ -129,7 +128,7 @@ const Compare = () => {
                     [
                         {textOne: "$9.99"},
                         {textOne: "700"},
-                        {textOne:  <CheckMark className="w-[24px] h-[24px]" />},
+                        {textOne:  <CheckMark className="w-[24x] h-[24px] my-[8px]" />},
                         {textOne:  "Credit", texTwo: "Message", number: "1"},
                         {textOne:  "Credit", texTwo: "Message", number: "1"},
                         {textOne:  "Credit", texTwo: "Message", number: "1"},
@@ -150,7 +149,7 @@ const Compare = () => {
                     [
                         {textOne: "$9.99"},
                         {textOne: "700"},
-                        {textOne:  <CheckMark className="w-[24px] h-[24px]" />},
+                        {textOne:  <CheckMark className="w-[24x] h-[24px] my-[8px]" />},
                         {textOne:  "Credit", texTwo: "Message", number: "1"},
                         {textOne:  "Credit", texTwo: "Message", number: "1"},
                         {textOne:  "Credit", texTwo: "Message", number: "1"},

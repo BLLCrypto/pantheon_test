@@ -10,17 +10,25 @@ const Footer = () => {
     <footer className='w-full absolute flex justify-center py-[30px] px-5 lg:py-[40px] lg:px-10 md:text-sm tracking-[2px] z-10'>
         <div className="w-full h-full max-w-7xl flex items-center justify-between text-xs">
             <div className='text-gray opacity-60'>
-                <p>© ARES 2024. All Rights Reserved.</p>
+                <p>© ARES {new Date().getFullYear()}. All Rights Reserved.</p>
             </div>
             <div className='flex items-center'>
-              <p className="text-gray opacity-60">Contact us: <b>support@pantheon.international</b></p>
+                <p className="text-gray opacity-60">Contact us: <Link><b>support@pantheon.international</b></Link></p>
             </div>
             <div className='flex items-center gap-[24px]'>
-              <p>Privacy Policy</p>
-              <p>Terms of Service</p>
+              <Link>
+                <p className="text-gray opacity-60 hover:opacity-100">Privacy Policy</p>
+              </Link>
+              <Link>
+                <p className="text-gray opacity-60 hover:opacity-100">Terms of Service</p>
+              </Link>
               <div className="flex items-center gap-[12px] ">
-                <Linkedin className="w-[24px] h-[24px] hover:pointer" />
-                <Twitter className="w-[24px] h-[24px] hover:pointer" />
+                <Link>
+                  <Linkedin className="text-gray opacity-60 w-[24px] h-[24px] hover:opacity-100" />
+                </Link>
+                <Link>
+                  <Twitter className="text-gray opacity-60 w-[24px] h-[24px] hover:opacity-100" />
+                </Link>
               </div>
             </div>
         </div>
