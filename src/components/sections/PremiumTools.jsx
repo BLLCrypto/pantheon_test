@@ -103,10 +103,10 @@ const PremiumTools = () => {
 
             <div className="flex items-center gap-[15px]">
                 {/* Custom Navigation Buttons */}
-                <button onClick={goToPrev} className={`group border border-gold-light p-[16px] hover:border-white disabled:opacity-40 disabled:pointer-events-none`} disabled={currentIndex === 0}>
+                <button onClick={goToPrev} className={`group border border-gold-light p-[16px] hover:border-white disabled:opacity-40 disabled:pointer-events-none select-none`} disabled={currentIndex === 0}>
                 <ArrowLeft className="text-gold group-hover:text-white" />
                 </button>
-                <button onClick={goToNext} className="group border border-gold-light p-[16px] hover:border-white disabled:opacity-40 disabled:pointer-events-none" disabled={currentIndex === 3}>
+                <button onClick={goToNext} className="group border border-gold-light p-[16px] hover:border-white disabled:opacity-40 disabled:pointer-events-none select-none" disabled={currentIndex === 3}>
                 <ArrowRight className="text-gold group-hover:text-white" />
                 </button>  
             </div>
