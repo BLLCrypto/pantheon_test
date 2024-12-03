@@ -57,12 +57,10 @@ export const HERO_TOOLS = [
 ]
 
 export const SLIDES = [
-    { image: SlideOne, title: "GPT-4o", content: "Chat with OpenAI’s most advanced AI model." },
-    { image: SlideTwo, title: "Claude", content: "Generate complex discussions with ease." },
-    { image: SlideThree, title: "Stable Diffusion", content: "Create breathtaking visual art." },
-    { image: SlideFour, title: "ElevenLabs", content: "Turn text into studio-quality audio." },
-    { image: "", title: "Card 5", content: "This is card 5" },
-    { image: "", title: "Card 6", content: "This is card 6" },
+    { logo: ToolFour, image: SlideOne, title: "GPT-4o", content: "Chat with OpenAI’s most advanced AI model." },
+    { logo: ToolThree, image: SlideTwo, title: "Claude", content: "Generate complex discussions with ease." },
+    { logo: ToolEigth, image: SlideThree, title: "Stable Diffusion", content: "Create breathtaking visual art." },
+    { logo: ToolOne, image: SlideFour, title: "ElevenLabs", content: "Turn text into studio-quality audio." },
 ]
 
 export const FAQ_ITEMS =   [

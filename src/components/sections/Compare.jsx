@@ -76,7 +76,8 @@ const NormalColumn = ({icon, title, items}) => {
     return (
         <div className="w-full md:w-1/5 bg-beige-light flex flex-col items-center text-center border border-gold-light gap-[32px] py-[48px] px-[24px]">
         <div className="flex flex-col items-center gap-[24px]">
-            <div className="w-[48px] h-[48px]">
+            <div className="w-[48px] h-[48px] relative flex items-center justify-center">
+                <div className="w-[24px] h-[24px] absolute rounded-[980px] bg-gold blur-[24px]"></div>
                 {icon}
             </div>
        

@@ -66,14 +66,17 @@ const PremiumTools = () => {
             modules={[Navigation, Pagination]}
             className="mySwiper w-full relative leading-[140%] overflow-visible"
             >
-            {SLIDES.map((card, index) => (
+            {SLIDES.map((slide, index) => (
                 <SwiperSlide key={index} className="w-full sm:w-[352px] h-auto bg-beige-light flex flex-col items-center border border-gold-light">
-                    <div className="w-full h-[240px] overflow-hidden">
-                        <img className="w-full h-full" src={card.image} />
+                    <div className="w-full h-[240px] overflow-hidden relative">
+                        <img className="w-full h-full" src={slide.image} />
+                        <div className="w-[64px] h-[64px] absolute top-[48px] left-[48px] z-10 rounded-[12.8px] overflow-hidden border border-beige-light">
+                            <img className="w-full h-full" src={slide.logo} />
+                        </div>
                     </div>
                     <div className="w-full flex flex-col p-[48px] flex-1 gap-[16px] text-start">
-                        <p className="font-text text-xl xl:text-2xl">{card.title}</p>
-                        <p>{card.content}</p>
+                        <p className="font-text text-xl xl:text-2xl">{slide.title}</p>
+                        <p>{slide.content}</p>
                     </div>
                 </SwiperSlide>
             ))}
