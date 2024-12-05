@@ -13,14 +13,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='w-full h-full '>
+    <div className='w-full h-auto relative'>
        <Header />
       <Routes key={location.pathname} location={location}>
           <Route
             path="/*"
             element={<Home/>}/>
       </Routes>
-      <Footer />
     </div>
   )
 }

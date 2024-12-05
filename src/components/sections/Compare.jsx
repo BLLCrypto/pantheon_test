@@ -93,8 +93,26 @@ const NormalColumn = ({icon, title, items}) => {
 
 const Compare = () => {
     return (
-        <section className={`${MainMaxW} w-full flex flex-col justify-center items-center`}>
-        <div className="w-full flex items-center justify-center mb-[80px] text-center">
+        <section className={`relative ${MainMaxW} w-full flex flex-col justify-center items-center`}>
+
+            <div 
+                className="w-[1440px] h-[720px] absolute left-[-160px] bottom-[-140px] rounded-full opacity-80 z-0"
+                style={{
+                    background: 'radial-gradient(50% 50% at 50% 50%, rgba(244, 236, 181, 0.10) 0%, rgba(158, 141, 89, 0.10) 50%, rgba(84, 31, 216, 0.10) 100%)',
+                    filter: 'blur(150px)',
+                }}
+            ></div>
+
+            <div 
+                    className="w-[1440px] h-[720px] absolute left-[-160px] bottom-[-300px] rounded-full opacity-80"
+                    style={{
+                        background: 'rgba(244, 236, 181, 0.04)',
+                        filter: 'blur(150px)',
+                      }}
+            ></div>
+
+
+        <div className="w-full flex items-center justify-center mb-[40px] md:mb-[80px] text-center">
             <h2>Compare Features <br className="block md:hidden"/> Across Plans</h2>
         </div>
 

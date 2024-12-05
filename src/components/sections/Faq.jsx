@@ -17,12 +17,21 @@ const FAQ = () => {
       setActiveAccordion(activeAccordion === index ? -1 : index);
     };
     return (
-        <section className={`${MainMaxW} w-full flex flex-col justify-center items-center gap-[60px]`}>
-          <div className="w-full flex items-center justify-center text-center leading-[110%] ">
+        <section className={`relative ${MainMaxW} w-full flex flex-col justify-center items-center gap-[40px] md:gap-[60px]`}>
+
+            <div 
+                className="w-[2038px] h-[1019px] absolute left-[-459px] bottom-[-540px] rounded-full opacity-80 z-0"
+                style={{
+                    background: 'radial-gradient(50% 50% at 50% 50%, rgba(244, 236, 181, 0.10) 0%, rgba(158, 141, 89, 0.10) 50%, rgba(84, 31, 216, 0.10) 100%)',
+                    filter: 'blur(150px)',
+                }}
+            ></div>
+
+          <div className="w-full flex items-center justify-center text-center leading-[110%] z-10">
               <h2>Got Questions? <br/>We’ve Got Answers.</h2>
           </div>
 
-          <div className="accordion-group max-w-[736px] leading-[160%]">
+          <div className="accordion-group max-w-[736px] leading-[160%] z-10">
             {FAQ_ITEMS.map((item, index) => (
               <div
                 key={index}

@@ -5,7 +5,7 @@ import { MainMaxW } from "../config/style"
 
 const Footer = () => {
     return (
-    <footer className={`${HeaderPadding} w-full absolute flex justify-center md:text-sm tracking-[2px] z-10`}>
+    <footer className={`w-full flex justify-center md:text-sm tracking-[2px] z-10`}>
         <div className={` ${MainMaxW} w-full h-full flex flex-col xl:flex-row gap-[4px] items-center justify-between text-xs leading-[160%] text-center`}>
             <div className='text-gray opacity-60 '>
                 <p>© ARES {new Date().getFullYear()}. All Rights Reserved.</p>

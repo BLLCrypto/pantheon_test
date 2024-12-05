@@ -33,7 +33,15 @@ const Trial = () => {
                         <PrimaryButton text="Start Free Trial" />
                     </div>
                 </div>
-                <div className="">
+                <div className="relative flex-1">
+                    <div 
+                        className="w-[1440px] h-[720px] absolute left-[-484px] top-[-152px] rounded-full opacity-80"
+                        style={{
+                            background: 'radial-gradient(50% 50% at 50% 50%, rgba(244, 236, 181, 0.10) 0%, rgba(158, 141, 89, 0.10) 50%, rgba(84, 31, 216, 0.10) 100%)',
+                            filter: 'blur(150px)',
+                        }}
+                    >
+                    </div>
                     <Mosaic />
                 </div>
               </div>

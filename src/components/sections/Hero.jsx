@@ -11,19 +11,47 @@ import { MainMaxW } from "../../config/style"
 
 
 const Hero = () => {
-    return (<section className="w-full pt-40 min-h-screen bg-custom-gradient relative flex justify-center">
-        <div className="absolute left-0 bottom-0 z-0">
+    return (
+    <section 
+        className="w-full pt-40 bg-custom-gradient relative flex flex-col items-center"
+    >
+        <div 
+            className="absolute left-0 bottom-[-37px]"
+            style={{
+                mixBlendMode: 'multiply',
+            }}
+        >
             <img src={CracksLeft} />
         </div>
-        <div className="absolute right-0 top-0 z-0">
+        <div 
+            className="absolute right-0 top-[114px] 0 z-0"
+            style={{
+                mixBlendMode: 'multiply',
+              }}
+        >
             <img src={CracksRighTop} />
         </div>
-        <div className="absolute right-0 bottom-0 z-0">
+        <div 
+            className="absolute right-0 bottom-[23.14px] z-0"
+            style={{
+                mixBlendMode: 'multiply',
+              }}
+        >
             <img src={CracksRighBottom} />
         </div>
-        <div className="w-full h-full absolute bg-custom-radial top-[-35%] rounded-full opacity-80 filter-blur"></div>
+        <div 
+            className="w-[1440px] h-[720px] absolute top-0 bg-custom-radial rounded-full opacity-80 filter-blur"
+        >
 
-        <div className={`${MainMaxW} w-full h-full flex flex-col items-center z-10`}>
+        </div>
+
+        <div className={`w-full h-full flex flex-col items-center z-10 relative px-5`}>
+
+            <div 
+                className="w-[1440px] h-[1000px] absolute top-[-500px] bg-custom-radial rounded-full opacity-80 filter-blur"
+            >
+            </div>
+
             <div className="max-w-[208.25px] md:max-w-[298.25px] lg:max-w-[342.125px] mb-[24px]">
                 <img src={AresImage} />
             </div>
@@ -36,12 +64,19 @@ const Hero = () => {
                 <p>Skip paywalls effortlessly and access premium AI tools and partner software instantly with ARES. Stop juggling subscriptions—pay only for what you use, nothing more.</p>
             </div>
 
-            <div className="w-full justify-center flex flex-col md:flex-row items-center gap-[16px] mb-[60px]">
+            <div className="w-full justify-center flex flex-col md:flex-row items-center gap-[16px]">
                 <PrimaryButton text={"Start Free Trial"} />
                 <SecondaryButton className="!text-white" text={"Sign in with google"} icon={<Goggle />} />
             </div>
+        </div>
 
-            <div className="w-full flex flex-col items-center gap-[20px] mb-[60px] ">
+        <div className="w-full h-full flex flex-col items-center z-10">
+            <div 
+                className="w-full flex flex-col items-center gap-[20px] py-[60px]"
+                style={{
+                    background: 'linear-gradient(180deg, rgba(26, 22, 25, 0.00) 0%, #1A1619 100%)',
+                }}
+            >
                 <p className="text-xs">ACCESS ALL THESE AI TOOLS WITH ARES</p>
                 <div className="flex items-center gap-[16px] md:gap-[32px]">
                     {HERO_TOOLS.map( (i, index) => (

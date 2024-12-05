@@ -14,6 +14,7 @@ export default {
       "2xl": "1280px",
       "3xl": "1440px",
       "4xl": "1680px",
+      "5xl": "1920px"
     },
     colors: {
       primary: "#17141A",

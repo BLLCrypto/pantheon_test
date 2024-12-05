@@ -61,6 +61,8 @@ export const SLIDES = [
     { logo: ToolThree, image: SlideTwo, title: "Claude", content: "Generate complex discussions with ease." },
     { logo: ToolEigth, image: SlideThree, title: "Stable Diffusion", content: "Create breathtaking visual art." },
     { logo: ToolOne, image: SlideFour, title: "ElevenLabs", content: "Turn text into studio-quality audio." },
+    { logo: ToolSeven, image: SlideThree, title: "Stable Diffusion", content: "Create breathtaking visual art." },
+    { logo: ToolFive, image: SlideFour, title: "ElevenLabs", content: "Turn text into studio-quality audio." },
 ]
 
 export const FAQ_ITEMS =   [

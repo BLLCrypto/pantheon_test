@@ -46,13 +46,21 @@ const PremiumTools = () => {
   
 
     return (  
-    <section className={`${MainMaxW} w-full flex flex-col justify-center items-center gap-[80px]`}>
+    <section className={`relative ${MainMaxW} w-full flex flex-col justify-center items-center gap-[40px] md:gap-[80px]`}>
+
+        <div 
+            className="w-[1440px] h-[720px] absolute left-[-160px] bottom-[-140px] rounded-full opacity-80 z-0"
+            style={{
+                background: 'radial-gradient(50% 50% at 50% 50%, rgba(244, 236, 181, 0.10) 0%, rgba(158, 141, 89, 0.10) 50%, rgba(84, 31, 216, 0.10) 100%)',
+                filter: 'blur(150px)',
+            }}
+        ></div>
 
         <div className="w-full flex items-center justify-center text-center">
             <h2>Premium Tools, <br className="block md:hidden" /> Ready to Roll</h2>
         </div>
 
-        <div className="w-full overflow-visible">
+        <div className="w-full overflow-visible z-10">
             <Swiper
             ref={swiperRef} // Attach reference for accessing the Swiper instance
             slidesPerView="auto"
@@ -74,7 +82,14 @@ const PremiumTools = () => {
                             <img className="w-full h-full" src={slide.logo} />
                         </div>
                     </div>
-                    <div className="w-full flex flex-col p-[48px] flex-1 gap-[16px] text-start">
+                    <div className="relative overflow-hidden w-full flex flex-col p-[48px] flex-1 gap-[16px] text-start">
+                        <div 
+                            className="w-[434px] h-[434px] absolute left-[-41px] bottom-[-197px] rounded-full opacity-80"
+                            style={{
+                                background: 'radial-gradient(50% 50% at 50% 50%, rgba(244, 236, 181, 0.10) 0%, rgba(158, 141, 89, 0.10) 50%, rgba(84, 31, 216, 0.10) 100%)',
+                                filter: 'blur(50px)',
+                            }}
+                        ></div>
                         <p className="font-text text-xl xl:text-2xl">{slide.title}</p>
                         <p>{slide.content}</p>
                     </div>
@@ -83,7 +98,7 @@ const PremiumTools = () => {
             </Swiper>
         </div>
 
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex items-center justify-between z-10">
             {/* Custom Pagination */}
             <div className="hidden md:flex items-center gap-[8px]">
                 {PaginationArr.map( (i, index) =>  <button
