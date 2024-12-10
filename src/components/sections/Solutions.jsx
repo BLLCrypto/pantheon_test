@@ -92,8 +92,18 @@ const Solutions = () => {
                         </div>
                     </div>
 
-                    <div className="w-full min-h-[308px] flex justify-center relative flex-1">
-                    <ToolsContainer className="top-[40px] flex-col" />
+                    <div className="h-full max-h-[308px] flex justify-center relative flex-1">
+                        <div className="w-[1087.108px] h-[1107.054px] flex justify-center relative top-[40px]">
+                            <div className="relative w-full h-full mt-[22px]">
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full border border-white-extra-dark bg-clip-border"></div>  
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[980px] h-[980px] rounded-full border border-white-extra-dark"></div> 
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[847px] h-[847px] rounded-full border border-white-extra-dark"></div>   
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[723px] h-[723px] rounded-full border border-white-extra-dark"></div> 
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[597px] h-[597px] rounded-full border border-white-extra-dark"></div> 
+                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[470px] h-[470px] rounded-full border border-white-extra-dark"></div> 
+                            </div>
+                            <ToolsContainer className="flex-col" />
+                        </div>
                     </div>
 
                 </div>
